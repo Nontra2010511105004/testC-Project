@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class auto : MonoBehaviour
 {
-        void Start()
-    {
-        print("Takeang");
-        Debug.Log("Nontra Gasunon");
-    }
-
+        
+   
     // Update is called once per frame
     void Update()
     {
