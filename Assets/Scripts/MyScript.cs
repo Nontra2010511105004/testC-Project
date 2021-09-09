@@ -21,6 +21,13 @@ public class MyScript : MonoBehaviour
              print( i);
             }
        }
+       int z=1;
+       while(z<=100)
+       {
+             print(z);
+                z += 2;
+        }
+        
        float x=1.0f;
        float r= circle(x);
     }
