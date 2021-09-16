@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 259947070}
   - component: {fileID: 259947069}
   m_Layer: 5
-  m_Name: Text
+  m_Name: QText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What is your favorite color??
+  m_Text: What is your name??
 --- !u!222 &259947070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   okButtom: {fileID: 463639402}
   answerField: {fileID: 183050622}
+  displayText: {fileID: 259947069}
 --- !u!1 &2147319149
 GameObject:
   m_ObjectHideFlags: 0
