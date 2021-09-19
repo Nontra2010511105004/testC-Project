@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
     public Button okButtom;
+    public Button PlayAgain;
     public InputField answerField; 
     public Text displayText;
     string[] answers;
@@ -18,6 +20,8 @@ public class GameControl : MonoBehaviour
         Question = new string[] {"What is your name?",
                             "How old are you? ",
                             "What do you like to do at freetime??" };
+        //string randomText = Question[Random.Range(0, Question.Length)];
+        //displayText.text = randomText;
         displayText.text = Question[currentQuestionNumber];
     }
     public void PrintAnswer()
@@ -39,17 +43,20 @@ public class GameControl : MonoBehaviour
         else 
         {
             displayText.text = " Your name is "+answers[0]+
-                                " Your old is "+answers[1]+
-                                " and like to "+answers[2];
+                                "\n Your old is  "+answers[1]+
+                                "\n and like to "+answers[2];
             
             okButtom.gameObject.SetActive(false);
             answerField.gameObject.SetActive(false);
         }
-        
     }
     // Update is called once per frame
     void Update()
     {
        //print(answerField.text);
     }
-}
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+   }
