@@ -44,7 +44,8 @@ public class GameControl : MonoBehaviour
         {
             displayText.text = " Your name is "+answers[0]+
                                 "\n Your old is  "+answers[1]+
-                                "\n and like to "+answers[2];
+                                "\n and like to "+answers[2]+
+                                "\n Tired .me too about learn online HAHA";
             
             okButtom.gameObject.SetActive(false);
             answerField.gameObject.SetActive(false);
